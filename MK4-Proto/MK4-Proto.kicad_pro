@@ -673,7 +673,7 @@
         "uuid": "38381170-d5a3-4fd2-9016-69ecf74bf287"
       }
     ],
-    "used_designators": "C3_OUT1,U1-2,U4-8,R1-35,J1-17,D2-26,L1-2,C6_OUT1-2,#PWR1-42,C5_OUT1-2,C1-5,C7-32,C2_IN1-2,C3_IN1-2,SW1-5,C1_BOOT1-2,Q1-13,C4_IN1-2,RN1-8,C\\-Buffer1,BT1",
+    "used_designators": "C3_OUT1,U1-2,U4-8,R1-35,J1-17,D2-27,L1-3,C6_OUT1-3,#PWR1-48,C5_OUT1-3,C1-5,C7-32,C2_IN1-3,C3_IN1-3,SW1-5,C1_BOOT1-3,Q1-13,C4_IN1-4,RN1-8,C\\-Buffer1-3,BT1",
     "variants": []
   },
   "sheets": [

@@ -2255,7 +2255,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 71.12) (xy 149.86 71.12)
+			(xy 120.65 71.12) (xy 149.86 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3025,7 +3025,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 73.66) (xy 93.98 73.66)
+			(xy 123.19 73.66) (xy 120.65 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5210,7 +5210,7 @@
 		)
 	)
 	(sheet
-		(at 81.28 69.85)
+		(at 107.95 69.85)
 		(size 12.7 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5226,7 +5226,7 @@
 		)
 		(uuid "42b5327a-fc7d-4aa6-a5f4-11b47a45f214")
 		(property "Sheetname" "LEDs"
-			(at 81.28 69.1384 0)
+			(at 107.95 69.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5237,7 +5237,7 @@
 			)
 		)
 		(property "Sheetfile" "leds.kicad_sch"
-			(at 81.28 75.5146 0)
+			(at 107.95 75.5146 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5249,7 +5249,7 @@
 			)
 		)
 		(pin "3.3V" input
-			(at 93.98 71.12 0)
+			(at 120.65 71.12 0)
 			(uuid "2185bae2-c290-4e31-94b8-fa7c65cbe1ce")
 			(effects
 				(font
@@ -5259,7 +5259,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 93.98 73.66 0)
+			(at 120.65 73.66 0)
 			(uuid "506c8dd6-3570-465f-b81f-63914b8815cc")
 			(effects
 				(font

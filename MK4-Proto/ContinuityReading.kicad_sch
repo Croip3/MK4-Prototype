@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Continuity Sensing")
+		(date "2026-10-26")
 		(comment 1 "8-CH VOLTAGE SENSE: 100k/27k divider (0–15.5 V -> 0–3.3 V), 10 nF filter (fc ≈ 750 Hz)")
 		(comment 2 "TMUX4051 8:1 mux, A0–A2 select, D -> ADC, always enabled")
 	)
@@ -1473,6 +1474,39 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "RAIL SENSE: Ignition Rail -> R601 100k / R602 27k, C609 10n\n-> Sense Rail OUT -> IO8 (ADC). Same scaling as the channel inputs"
+		(exclude_from_sim no)
+		(at 65 44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "34eed440-7117-4098-93b1-aa4c2334b3b8")
+	)
+	(text "ADC MUX U601 TMUX4051 (8:1)\nA0/A1/A2 = IO11/IO10/IO9: binary select, S0..S7 = Channel 1..8\nD -> IO7 (ADC1). /EN tied to GND -> mux always enabled\nC610 100n decoupling at VDD (3.3 V)"
+		(exclude_from_sim no)
+		(at 115 128 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "987a9875-2cc6-4834-acd2-15146c1bcd80")
+	)
+	(text "CHANNEL SENSE (one per channel)\nSense Channel n -> 100k / 27k divider + 10n -> mux input S(n-1)\nCh1-4: RN601 (100k) / RN602 (27k), C601-C604\nCh5-8: RN603 (100k) / RN604 (27k), C605-C608\nIgniter connected -> node follows the rail voltage, open -> ~0 V"
+		(exclude_from_sim no)
+		(at 65 20 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e8ce65cc-0ab2-41b6-811c-3d07198e932b")
+	)
 	(junction
 		(at 88.9 80.01)
 		(diameter 0)
@@ -2885,7 +2919,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01813e4a-d510-4386-a856-d2597641c259")
-		(property "Reference" "R29"
+		(property "Reference" "R602"
 			(at 45.974 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2949,7 +2983,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "R29")
+					(reference "R602")
 					(unit 1)
 				)
 			)
@@ -3045,7 +3079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23b03784-8c7d-4522-8e1a-b144fd13dc1e")
-		(property "Reference" "RN3"
+		(property "Reference" "RN601"
 			(at 91.44 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3127,7 +3161,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN3")
+					(reference "RN601")
 					(unit 4)
 				)
 			)
@@ -3143,10 +3177,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2652d1c1-5eab-4eb4-920d-a2c71be03df4")
-		(property "Reference" "RN1"
-			(at 115.57 83.8199 0)
+		(property "Reference" "RN602"
+			(at 114.3 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3157,7 +3190,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 115.57 86.3599 0)
+			(at 114.3 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3227,7 +3260,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN1")
+					(reference "RN602")
 					(unit 3)
 				)
 			)
@@ -3243,10 +3276,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "29234eaa-d242-473e-b5d1-eac2d97dcefe")
-		(property "Reference" "C16"
-			(at 152.4 83.8199 0)
+		(property "Reference" "C603"
+			(at 151.384 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3257,7 +3289,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 152.4 86.3599 0)
+			(at 151.384 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3309,7 +3341,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C16")
+					(reference "C603")
 					(unit 1)
 				)
 			)
@@ -3405,7 +3437,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31f0cb0c-4c21-428b-9c1c-14e6f46ce59f")
-		(property "Reference" "RN3"
+		(property "Reference" "RN601"
 			(at 115.57 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3487,7 +3519,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN3")
+					(reference "RN601")
 					(unit 3)
 				)
 			)
@@ -3505,7 +3537,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3329c764-639b-40f5-9ad8-74f466433470")
-		(property "Reference" "RN4"
+		(property "Reference" "RN603"
 			(at 236.22 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3587,7 +3619,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN4")
+					(reference "RN603")
 					(unit 2)
 				)
 			)
@@ -3682,8 +3714,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37342b3e-141d-405f-a1a2-feb142f61995")
-		(property "Reference" "U8"
-			(at 68.58 127.508 90)
+		(property "Reference" "U601"
+			(at 71.628 127.508 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3789,7 +3821,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "U8")
+					(reference "U601")
 					(unit 1)
 				)
 			)
@@ -3807,7 +3839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "376b3f0f-bfca-402a-a42e-9d86279c1270")
-		(property "Reference" "RN4"
+		(property "Reference" "RN603"
 			(at 260.35 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3889,7 +3921,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN4")
+					(reference "RN603")
 					(unit 1)
 				)
 			)
@@ -3907,7 +3939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a68893a-2a51-4307-97f0-0221e0cb29b7")
-		(property "Reference" "RN3"
+		(property "Reference" "RN601"
 			(at 139.7 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3989,7 +4021,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN3")
+					(reference "RN601")
 					(unit 2)
 				)
 			)
@@ -4005,10 +4037,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3bff215b-65d2-4478-8624-be79018c845b")
-		(property "Reference" "C17"
-			(at 176.53 83.8199 0)
+		(property "Reference" "C604"
+			(at 175.514 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4019,7 +4050,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 176.53 86.3599 0)
+			(at 175.514 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4071,7 +4102,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C17")
+					(reference "C604")
 					(unit 1)
 				)
 			)
@@ -4087,10 +4118,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4a274972-16cf-454f-9c20-b2f3e3eea024")
-		(property "Reference" "C19"
-			(at 224.79 83.8199 0)
+		(property "Reference" "C606"
+			(at 223.774 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4101,7 +4131,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 224.79 86.3599 0)
+			(at 223.774 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4153,7 +4183,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C19")
+					(reference "C606")
 					(unit 1)
 				)
 			)
@@ -4169,10 +4199,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "58548b25-f63a-435f-b35b-709fafa7c92e")
-		(property "Reference" "RN2"
-			(at 260.35 83.8199 0)
+		(property "Reference" "RN604"
+			(at 259.08 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4183,7 +4212,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 260.35 86.3599 0)
+			(at 259.08 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4253,7 +4282,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN2")
+					(reference "RN604")
 					(unit 1)
 				)
 			)
@@ -4269,10 +4298,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6a6d7837-1a48-4ec3-a7d9-ae12db796643")
-		(property "Reference" "RN1"
-			(at 91.44 83.8199 0)
+		(property "Reference" "RN602"
+			(at 90.17 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4283,7 +4311,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 91.44 86.3599 0)
+			(at 90.17 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4353,7 +4381,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN1")
+					(reference "RN602")
 					(unit 4)
 				)
 			)
@@ -4370,8 +4398,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b03f370-9c34-4382-9e1d-b67490c46a59")
-		(property "Reference" "C13"
-			(at 51.816 55.88 0)
+		(property "Reference" "C609"
+			(at 51.054 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4432,7 +4460,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C13")
+					(reference "C609")
 					(unit 1)
 				)
 			)
@@ -4450,7 +4478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b106447-e128-494b-9f94-795ddf448c1b")
-		(property "Reference" "RN3"
+		(property "Reference" "RN601"
 			(at 163.83 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4532,7 +4560,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN3")
+					(reference "RN601")
 					(unit 1)
 				)
 			)
@@ -4549,7 +4577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d705981-ead6-48c9-9f6c-916252cdee92")
-		(property "Reference" "R15"
+		(property "Reference" "R601"
 			(at 45.974 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4613,7 +4641,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "R15")
+					(reference "R601")
 					(unit 1)
 				)
 			)
@@ -4785,10 +4813,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a11ef1e1-7d8a-409d-b946-0afd9834df70")
-		(property "Reference" "RN1"
-			(at 139.7 83.8199 0)
+		(property "Reference" "RN602"
+			(at 138.43 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4799,7 +4826,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 139.7 86.3599 0)
+			(at 138.43 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4869,7 +4896,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN1")
+					(reference "RN602")
 					(unit 2)
 				)
 			)
@@ -4963,10 +4990,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a2d6b1a1-a9a4-4d40-bede-3695d12eeb28")
-		(property "Reference" "C18"
-			(at 200.66 83.8199 0)
+		(property "Reference" "C605"
+			(at 199.644 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4977,7 +5003,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 200.66 86.3599 0)
+			(at 199.644 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5029,7 +5055,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C18")
+					(reference "C605")
 					(unit 1)
 				)
 			)
@@ -5047,7 +5073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5ca8f00-a049-44c9-97dc-67df99340c86")
-		(property "Reference" "RN4"
+		(property "Reference" "RN603"
 			(at 187.96 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5129,7 +5155,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN4")
+					(reference "RN603")
 					(unit 4)
 				)
 			)
@@ -5145,10 +5171,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "aea17482-4b44-4238-a95f-75c2c9491dc1")
-		(property "Reference" "RN1"
-			(at 163.83 83.8199 0)
+		(property "Reference" "RN602"
+			(at 162.56 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5159,7 +5184,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 163.83 86.3599 0)
+			(at 162.56 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5229,7 +5254,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN1")
+					(reference "RN602")
 					(unit 1)
 				)
 			)
@@ -5323,10 +5348,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b9ba955d-aa8a-43bf-ba0b-d4fc053fb542")
-		(property "Reference" "RN2"
-			(at 187.96 83.8199 0)
+		(property "Reference" "RN604"
+			(at 186.69 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5337,7 +5361,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 187.96 86.3599 0)
+			(at 186.69 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5407,7 +5431,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN2")
+					(reference "RN604")
 					(unit 4)
 				)
 			)
@@ -5423,10 +5447,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c0020b57-a0cd-4e4f-b685-8bf4e63bd887")
-		(property "Reference" "C31"
-			(at 273.05 83.8199 0)
+		(property "Reference" "C608"
+			(at 272.034 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5437,7 +5460,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 273.05 86.3599 0)
+			(at 272.034 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5489,7 +5512,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C31")
+					(reference "C608")
 					(unit 1)
 				)
 			)
@@ -5506,7 +5529,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2b3698a-68a6-4713-bb87-a921aeaa79a1")
-		(property "Reference" "C11"
+		(property "Reference" "C610"
 			(at 63.246 136.906 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5568,7 +5591,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C11")
+					(reference "C610")
 					(unit 1)
 				)
 			)
@@ -5584,10 +5607,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c3134919-2e70-4ee2-a287-3c9764596826")
-		(property "Reference" "C14"
-			(at 104.14 83.8199 0)
+		(property "Reference" "C601"
+			(at 103.124 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5598,7 +5620,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 104.14 86.3599 0)
+			(at 103.124 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5650,7 +5672,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C14")
+					(reference "C601")
 					(unit 1)
 				)
 			)
@@ -5666,10 +5688,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c3637ca4-afa7-4b36-b9e0-04a13434f89b")
-		(property "Reference" "RN2"
-			(at 212.09 83.8199 0)
+		(property "Reference" "RN604"
+			(at 210.82 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5680,7 +5701,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 212.09 86.3599 0)
+			(at 210.82 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5750,7 +5771,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN2")
+					(reference "RN604")
 					(unit 3)
 				)
 			)
@@ -5922,10 +5943,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cc980e13-b8e6-4795-b88b-acd9202fa8ac")
-		(property "Reference" "RN2"
-			(at 236.22 83.8199 0)
+		(property "Reference" "RN604"
+			(at 234.95 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5936,7 +5956,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 236.22 86.3599 0)
+			(at 234.95 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6006,7 +6026,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN2")
+					(reference "RN604")
 					(unit 2)
 				)
 			)
@@ -6022,10 +6042,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d3a85a5a-07f1-4bcd-a896-41e13913c05a")
-		(property "Reference" "C15"
-			(at 128.27 83.8199 0)
+		(property "Reference" "C602"
+			(at 127.254 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6036,7 +6055,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 128.27 86.3599 0)
+			(at 127.254 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6088,7 +6107,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C15")
+					(reference "C602")
 					(unit 1)
 				)
 			)
@@ -6104,10 +6123,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d4d3b96b-d18d-4f30-b9d0-4828c360fa69")
-		(property "Reference" "C20"
-			(at 248.92 83.8199 0)
+		(property "Reference" "C607"
+			(at 247.904 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6118,7 +6136,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 248.92 86.3599 0)
+			(at 247.904 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6170,7 +6188,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "C20")
+					(reference "C607")
 					(unit 1)
 				)
 			)
@@ -6266,7 +6284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e52198c4-e8bf-4501-8c2d-a6ec053ed6db")
-		(property "Reference" "RN4"
+		(property "Reference" "RN603"
 			(at 212.09 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6348,7 +6366,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/bfcbb0e5-8618-436c-9d6f-6042901c8e61"
-					(reference "RN4")
+					(reference "RN603")
 					(unit 3)
 				)
 			)

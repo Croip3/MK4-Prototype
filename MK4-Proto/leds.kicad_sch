@@ -9,6 +9,7 @@
 		(date "2026-10-24")
 		(comment 1 "8 Channel Leds")
 		(comment 2 "2 Status Leds")
+		(comment 3 "WS2812B chain, data from IO16")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -692,6 +693,17 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "STATUS / CHANNEL LEDs\nIO16 -> R501 330R series resistor -> WS2812B chain D501 ... D510\nChain order = LED index in firmware (D501 = index 0, D510 = index 9)\nC501-C510: 100n decoupling, one per LED"
+		(exclude_from_sim no)
+		(at 75 100 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a6858d5f-f955-4845-bdaa-4ba00ae5af5d")
 	)
 	(junction
 		(at 110.49 60.96)
@@ -1404,7 +1416,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06616af7-ee9d-4692-a502-f75b3cf704ff")
-		(property "Reference" "C30"
+		(property "Reference" "C510"
 			(at 220.98 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1466,7 +1478,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C30")
+					(reference "C510")
 					(unit 1)
 				)
 			)
@@ -1561,8 +1573,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10cad2bf-8cd2-423f-bd28-627854a8a592")
-		(property "Reference" "D18"
-			(at 112.776 87.376 0)
+		(property "Reference" "D503"
+			(at 113.792 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1631,7 +1643,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D18")
+					(reference "D503")
 					(unit 1)
 				)
 			)
@@ -1648,8 +1660,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14f37ce9-b054-4b3a-aaa2-10e4d1e28eb0")
-		(property "Reference" "D25"
-			(at 219.456 87.376 0)
+		(property "Reference" "D510"
+			(at 220.472 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1718,7 +1730,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D25")
+					(reference "D510")
 					(unit 1)
 				)
 			)
@@ -1813,7 +1825,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f82d1c6-23b6-4553-ae3d-a1511e6412e9")
-		(property "Reference" "C24"
+		(property "Reference" "C504"
 			(at 129.54 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1875,7 +1887,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C24")
+					(reference "C504")
 					(unit 1)
 				)
 			)
@@ -1892,8 +1904,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20d261c6-432e-4706-9e43-ea5f860be3de")
-		(property "Reference" "D21"
-			(at 158.496 87.376 0)
+		(property "Reference" "D506"
+			(at 159.512 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1962,7 +1974,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D21")
+					(reference "D506")
 					(unit 1)
 				)
 			)
@@ -2057,8 +2069,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57736c4d-b11a-4f42-8ad8-33620a5d5c22")
-		(property "Reference" "D23"
-			(at 188.976 87.376 0)
+		(property "Reference" "D508"
+			(at 189.992 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2127,7 +2139,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D23")
+					(reference "D508")
 					(unit 1)
 				)
 			)
@@ -2222,7 +2234,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c5672dd-b86b-4a23-922a-4141f1f6c951")
-		(property "Reference" "C25"
+		(property "Reference" "C505"
 			(at 144.78 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2284,7 +2296,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C25")
+					(reference "C505")
 					(unit 1)
 				)
 			)
@@ -2301,7 +2313,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6fa815ae-4825-4365-a232-0acafbb3a4f7")
-		(property "Reference" "C22"
+		(property "Reference" "C502"
 			(at 99.06 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2363,7 +2375,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C22")
+					(reference "C502")
 					(unit 1)
 				)
 			)
@@ -2380,8 +2392,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7067bce5-2ab6-4cd2-afd4-35fac4d5c9de")
-		(property "Reference" "D19"
-			(at 128.016 87.376 0)
+		(property "Reference" "D504"
+			(at 129.032 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2450,7 +2462,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D19")
+					(reference "D504")
 					(unit 1)
 				)
 			)
@@ -2467,7 +2479,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72b5b9e1-1440-48b9-9a46-1ffda89de01d")
-		(property "Reference" "C21"
+		(property "Reference" "C501"
 			(at 83.82 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2529,7 +2541,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C21")
+					(reference "C501")
 					(unit 1)
 				)
 			)
@@ -2546,7 +2558,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9761f041-2221-4326-8f53-117ba3cf7364")
-		(property "Reference" "C28"
+		(property "Reference" "C508"
 			(at 190.5 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2608,7 +2620,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C28")
+					(reference "C508")
 					(unit 1)
 				)
 			)
@@ -2781,8 +2793,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a76d9301-9e26-4e0e-a19e-04490334c4d1")
-		(property "Reference" "D4"
-			(at 82.296 87.376 0)
+		(property "Reference" "D501"
+			(at 83.312 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2851,7 +2863,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D4")
+					(reference "D501")
 					(unit 1)
 				)
 			)
@@ -2868,7 +2880,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8e0eba3-7ca6-4356-b4c0-02f01bcc395f")
-		(property "Reference" "C29"
+		(property "Reference" "C509"
 			(at 205.74 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2930,7 +2942,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C29")
+					(reference "C509")
 					(unit 1)
 				)
 			)
@@ -2947,7 +2959,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9e84143-b25c-40a4-9f8f-1c70ab4d703a")
-		(property "Reference" "C23"
+		(property "Reference" "C503"
 			(at 114.3 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3009,7 +3021,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C23")
+					(reference "C503")
 					(unit 1)
 				)
 			)
@@ -3104,8 +3116,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c0305305-c996-4c22-abdc-70013c638d84")
-		(property "Reference" "D17"
-			(at 97.536 87.376 0)
+		(property "Reference" "D502"
+			(at 98.552 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3174,7 +3186,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D17")
+					(reference "D502")
 					(unit 1)
 				)
 			)
@@ -3191,7 +3203,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c15ae176-88eb-4a98-85bb-0317f33d9591")
-		(property "Reference" "C27"
+		(property "Reference" "C507"
 			(at 175.26 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3253,7 +3265,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C27")
+					(reference "C507")
 					(unit 1)
 				)
 			)
@@ -3270,8 +3282,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c44907d2-44be-45e3-8e96-7f9aace171e3")
-		(property "Reference" "D24"
-			(at 204.216 87.376 0)
+		(property "Reference" "D509"
+			(at 205.232 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3340,7 +3352,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D24")
+					(reference "D509")
 					(unit 1)
 				)
 			)
@@ -3357,8 +3369,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4f70373-8487-40b8-be1b-db0e9fe5d05b")
-		(property "Reference" "D22"
-			(at 173.736 87.376 0)
+		(property "Reference" "D507"
+			(at 174.752 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3427,7 +3439,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D22")
+					(reference "D507")
 					(unit 1)
 				)
 			)
@@ -3444,8 +3456,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "da65ad22-573a-41e0-9a67-55d26a20a6fe")
-		(property "Reference" "D20"
-			(at 143.256 87.376 0)
+		(property "Reference" "D505"
+			(at 144.272 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3514,7 +3526,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "D20")
+					(reference "D505")
 					(unit 1)
 				)
 			)
@@ -3609,7 +3621,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee40ee10-f66f-47ba-b857-9bebc30be353")
-		(property "Reference" "C26"
+		(property "Reference" "C506"
 			(at 160.02 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3671,7 +3683,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "C26")
+					(reference "C506")
 					(unit 1)
 				)
 			)
@@ -3767,7 +3779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7731a60-d31d-4bb4-aa5c-6f10af3d42d7")
-		(property "Reference" "R25"
+		(property "Reference" "R501"
 			(at 68.58 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3829,7 +3841,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/42b5327a-fc7d-4aa6-a5f4-11b47a45f214"
-					(reference "R25")
+					(reference "R501")
 					(unit 1)
 				)
 			)

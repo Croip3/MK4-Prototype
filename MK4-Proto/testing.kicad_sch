@@ -5,8 +5,10 @@
 	(uuid "1f954bdb-7352-45bf-8d19-b5b6d7e78d71")
 	(paper "A4")
 	(title_block
-		(title "Ignition & Test  Rail Control")
+		(title "Ignition & Test Rail Control")
 		(date "2026-10-24")
+		(comment 1 "High-side P-FET switch for the ignition rail (IO15)")
+		(comment 2 "Current-limited 3.3 V test feed for continuity check (IO14)")
 	)
 	(lib_symbols
 		(symbol "Device:R"
@@ -1081,6 +1083,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "IGNITION RAIL SWITCH (high side)\nQ301 AO3401A P-FET: 5V-12V (after ARM) -> Ignition Rail\nR301 10k pulls the gate to source -> rail OFF by default\nIO15 (Trigger 12V on Rail) -> R303 100R -> Q302 AO3400A\nR304 100k keeps Q302 off while the MCU boots\nQ302 on -> R302 4.7k pulls Q301 gate low -> rail ON\nVgs(Q301) ~ -0.68 x Vin (-8.2 V @ 12 V, -3.4 V @ 5 V)"
+		(exclude_from_sim no)
+		(at 168 44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1740fcc0-7a1e-40e9-a825-2d7c1de1e15c")
+	)
+	(text "RAIL TEST CURRENT (continuity check)\nIO14 (Trigger 3.3V on Rail) -> R305 1k -> D301 -> Ignition Rail\nCurrent limited to < 2.6 mA, well below igniter no-fire current\nD301 blocks the 12 V rail from back-feeding the GPIO"
+		(exclude_from_sim no)
+		(at 100 130 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c0f6acb4-5ead-4a99-bd66-af35b11c0ddb")
+	)
 	(junction
 		(at 143.51 82.55)
 		(diameter 0)
@@ -1434,8 +1458,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f2b2029-5acb-4f5f-9f55-899ea5024907")
-		(property "Reference" "Q12"
-			(at 161.798 110.744 0)
+		(property "Reference" "Q302"
+			(at 162.306 110.744 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1502,7 +1526,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "Q12")
+					(reference "Q302")
 					(unit 1)
 				)
 			)
@@ -1520,7 +1544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30cc7452-d728-443d-99bd-6e189e3c333e")
-		(property "Reference" "D26"
+		(property "Reference" "D301"
 			(at 146.05 87.6299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1606,7 +1630,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "D26")
+					(reference "D301")
 					(unit 1)
 				)
 			)
@@ -1623,8 +1647,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64bafc49-648b-4a73-87f6-6777fe2211a9")
-		(property "Reference" "Q13"
-			(at 134.366 66.04 0)
+		(property "Reference" "Q301"
+			(at 138.684 66.294 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1691,7 +1715,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "Q13")
+					(reference "Q301")
 					(unit 1)
 				)
 			)
@@ -1708,7 +1732,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76139aa1-4717-40a5-9722-ebacb38de303")
-		(property "Reference" "R31"
+		(property "Reference" "R303"
 			(at 144.78 107.696 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1772,7 +1796,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "R31")
+					(reference "R303")
 					(unit 1)
 				)
 			)
@@ -1789,8 +1813,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d2f59b24-e134-4c08-8919-39efe4bc42a4")
-		(property "Reference" "R30"
-			(at 153.67 115.316 0)
+		(property "Reference" "R304"
+			(at 154.94 115.316 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1853,7 +1877,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "R30")
+					(reference "R304")
 					(unit 1)
 				)
 			)
@@ -1871,7 +1895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dac9d166-fb50-4a7c-bdf1-c1372b989e53")
-		(property "Reference" "R32"
+		(property "Reference" "R305"
 			(at 146.05 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1935,7 +1959,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "R32")
+					(reference "R305")
 					(unit 1)
 				)
 			)
@@ -1952,7 +1976,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e4411c11-0b38-4231-ab7d-a8a2e3eaef10")
-		(property "Reference" "R34"
+		(property "Reference" "R301"
 			(at 153.924 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2014,7 +2038,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "R34")
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -2031,7 +2055,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f46a28d8-6dc2-44cf-b40c-727cca3a42f0")
-		(property "Reference" "R33"
+		(property "Reference" "R302"
 			(at 159.766 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2095,7 +2119,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "R33")
+					(reference "R302")
 					(unit 1)
 				)
 			)

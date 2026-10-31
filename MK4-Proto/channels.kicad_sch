@@ -7,7 +7,7 @@
 	(title_block
 		(title "Channels")
 		(date "2026-10-25")
-		(comment 1 "One ingition current rail")
+		(comment 1 "One ignition current rail")
 		(comment 2 "Channel On/Off control by Mosfets")
 		(comment 3 "Current measurement line - Continuity Sense")
 	)
@@ -763,6 +763,17 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "IGNITION CHANNELS 1-8 (low-side switches)\nChannel n: J40n terminal (Pin 2 = Ignition Rail, Pin 1 = igniter return)\nQ40n AO3400A N-FET pulls the igniter to GND when 'Channel n' is high\nR40n 10k gate pull-down keeps the channel OFF while the driver is undriven\nDrain node = 'Continuity Sense n' -> divider + mux (Continuity Reading)\nAn igniter only fires if the Ignition Rail is ON (Q301) AND Q40n is ON"
+		(exclude_from_sim no)
+		(at 86.36 94.742 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "42992368-09c4-4441-b503-2dd7e23fbc77")
 	)
 	(junction
 		(at 204.47 64.77)
@@ -2026,8 +2037,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b9b343b-c9ed-4d5b-90a2-5eb25a750ac0")
-		(property "Reference" "J1"
-			(at 97.79 24.638 90)
+		(property "Reference" "J401"
+			(at 98.806 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2037,7 +2048,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH1"
 			(at 104.902 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2090,7 +2101,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J1")
+					(reference "J401")
 					(unit 1)
 				)
 			)
@@ -2107,7 +2118,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0d8373e3-9f5b-44aa-a0cc-09ed13c38d6a")
-		(property "Reference" "Q9"
+		(property "Reference" "Q403"
 			(at 141.732 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2177,7 +2188,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q9")
+					(reference "Q403")
 					(unit 1)
 				)
 			)
@@ -2194,7 +2205,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e12e535-734a-42cc-bf88-5ddd9d3c3342")
-		(property "Reference" "R10"
+		(property "Reference" "R406"
 			(at 189.23 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2256,7 +2267,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R10")
+					(reference "R406")
 					(unit 1)
 				)
 			)
@@ -2273,7 +2284,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2be9626e-2b97-4afe-8b19-a8eecb9a57d0")
-		(property "Reference" "R8"
+		(property "Reference" "R408"
 			(at 227.33 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2335,7 +2346,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R8")
+					(reference "R408")
 					(unit 1)
 				)
 			)
@@ -2352,8 +2363,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d94cef9-68e5-46fe-9087-ec930981a35b")
-		(property "Reference" "J6"
-			(at 193.04 24.638 90)
+		(property "Reference" "J406"
+			(at 194.056 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2363,7 +2374,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH6"
 			(at 200.152 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2416,7 +2427,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J6")
+					(reference "J406")
 					(unit 1)
 				)
 			)
@@ -2433,8 +2444,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "30305ebd-c41a-485a-ba02-c6f95431424e")
-		(property "Reference" "J5"
-			(at 173.99 24.638 90)
+		(property "Reference" "J405"
+			(at 175.006 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2444,7 +2455,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH5"
 			(at 181.102 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2497,7 +2508,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J5")
+					(reference "J405")
 					(unit 1)
 				)
 			)
@@ -2514,7 +2525,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "303093b8-86fb-4f55-a9ec-2664536eca34")
-		(property "Reference" "R11"
+		(property "Reference" "R405"
 			(at 170.18 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2576,7 +2587,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R11")
+					(reference "R405")
 					(unit 1)
 				)
 			)
@@ -2593,7 +2604,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34ce4234-4ed0-4fcf-9207-971603f0e2aa")
-		(property "Reference" "Q10"
+		(property "Reference" "Q402"
 			(at 122.682 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2663,7 +2674,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q10")
+					(reference "Q402")
 					(unit 1)
 				)
 			)
@@ -2758,8 +2769,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "389b5613-94cd-445f-b62d-fc15f4f26379")
-		(property "Reference" "J7"
-			(at 212.09 24.638 90)
+		(property "Reference" "J407"
+			(at 213.106 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2769,7 +2780,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH7"
 			(at 219.202 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2822,7 +2833,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J7")
+					(reference "J407")
 					(unit 1)
 				)
 			)
@@ -2839,7 +2850,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e2cc4a0-da52-42f8-bfbc-a2b9875ed183")
-		(property "Reference" "Q11"
+		(property "Reference" "Q401"
 			(at 103.632 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2909,7 +2920,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q11")
+					(reference "Q401")
 					(unit 1)
 				)
 			)
@@ -3004,7 +3015,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a52926c-d88c-4b7a-ba9a-4e009b13f0cb")
-		(property "Reference" "R12"
+		(property "Reference" "R404"
 			(at 151.13 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3066,7 +3077,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R12")
+					(reference "R404")
 					(unit 1)
 				)
 			)
@@ -3239,7 +3250,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ab22656-e0b8-4c3a-b479-ab2c9c656766")
-		(property "Reference" "R9"
+		(property "Reference" "R407"
 			(at 208.28 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3301,7 +3312,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R9")
+					(reference "R407")
 					(unit 1)
 				)
 			)
@@ -3318,8 +3329,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70381384-df3b-4c3c-8cf0-7e0c6c532023")
-		(property "Reference" "J3"
-			(at 135.89 24.638 90)
+		(property "Reference" "J403"
+			(at 136.906 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3329,7 +3340,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH3"
 			(at 143.002 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3382,7 +3393,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J3")
+					(reference "J403")
 					(unit 1)
 				)
 			)
@@ -3399,8 +3410,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "718c2ccb-624d-49cc-b598-9bc6e3f44912")
-		(property "Reference" "J8"
-			(at 231.14 24.638 90)
+		(property "Reference" "J408"
+			(at 232.156 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3410,7 +3421,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH8"
 			(at 238.252 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3463,7 +3474,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J8")
+					(reference "J408")
 					(unit 1)
 				)
 			)
@@ -3480,7 +3491,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7336fd40-25a4-487a-b122-606f5bd3c39e")
-		(property "Reference" "Q2"
+		(property "Reference" "Q408"
 			(at 236.982 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3550,7 +3561,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q2")
+					(reference "Q408")
 					(unit 1)
 				)
 			)
@@ -3645,7 +3656,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "90dbbf13-0f14-41df-bb02-078a4ee1e000")
-		(property "Reference" "Q3"
+		(property "Reference" "Q407"
 			(at 217.932 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3715,7 +3726,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q3")
+					(reference "Q407")
 					(unit 1)
 				)
 			)
@@ -3732,7 +3743,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9360f92c-e16a-45f8-bb97-06e6eb1fd38b")
-		(property "Reference" "R27"
+		(property "Reference" "R402"
 			(at 113.03 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3794,7 +3805,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R27")
+					(reference "R402")
 					(unit 1)
 				)
 			)
@@ -3811,7 +3822,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9fedc5d8-8e4e-4476-9582-a7b2d5944da0")
-		(property "Reference" "R28"
+		(property "Reference" "R401"
 			(at 93.98 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3873,7 +3884,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R28")
+					(reference "R401")
 					(unit 1)
 				)
 			)
@@ -3890,7 +3901,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a15dfadd-eeb3-4e44-a7cf-08bfb3d2555d")
-		(property "Reference" "Q7"
+		(property "Reference" "Q405"
 			(at 179.832 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3960,7 +3971,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q7")
+					(reference "Q405")
 					(unit 1)
 				)
 			)
@@ -3977,7 +3988,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6aaea4c-00c6-4361-8b62-97c773bdda19")
-		(property "Reference" "Q8"
+		(property "Reference" "Q404"
 			(at 160.782 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4047,7 +4058,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q8")
+					(reference "Q404")
 					(unit 1)
 				)
 			)
@@ -4220,7 +4231,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc7eb3e2-fc43-41ca-ba08-99ec3f2557fa")
-		(property "Reference" "R26"
+		(property "Reference" "R403"
 			(at 132.08 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4282,7 +4293,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "R26")
+					(reference "R403")
 					(unit 1)
 				)
 			)
@@ -4299,7 +4310,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e579d6f8-380a-48a9-ba00-e565339fcd6a")
-		(property "Reference" "Q6"
+		(property "Reference" "Q406"
 			(at 198.882 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4369,7 +4380,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "Q6")
+					(reference "Q406")
 					(unit 1)
 				)
 			)
@@ -4386,8 +4397,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea8198b7-56b8-4a86-a4b6-9dcd48281188")
-		(property "Reference" "J2"
-			(at 116.84 24.638 90)
+		(property "Reference" "J402"
+			(at 117.856 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4397,7 +4408,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH2"
 			(at 123.952 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4450,7 +4461,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J2")
+					(reference "J402")
 					(unit 1)
 				)
 			)
@@ -4467,8 +4478,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eca0f084-5a1f-42a3-875f-eba17703ca60")
-		(property "Reference" "J4"
-			(at 154.94 24.638 90)
+		(property "Reference" "J404"
+			(at 155.956 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4478,7 +4489,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "Igniter CH4"
 			(at 162.052 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4531,7 +4542,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/ad96301e-f85c-4bb8-9063-fd07a1592d11"
-					(reference "J4")
+					(reference "J404")
 					(unit 1)
 				)
 			)

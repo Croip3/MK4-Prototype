@@ -8,6 +8,8 @@
 		(title "MK4-Proto (Zündanlage MK4 Prototype)")
 		(date "2026-10-02")
 		(rev "0")
+		(comment 1 "ESP32-S3 node: MCU, 74HC595 channel driver, battery sense, ARM switch")
+		(comment 2 "Refs: <page><nn>  1xx root, 2xx power, 3xx rail ctrl, 4xx channels, 5xx LEDs, 6xx continuity")
 	)
 	(lib_symbols
 		(symbol "74xx:74HC595"
@@ -1993,6 +1995,72 @@
 		)
 		(uuid "2997d53d-fcfa-4ab0-94b7-de443a7a0b07")
 	)
+	(text "SUPPLY / ARMING\n4.5-12V Rail (after POWER switch SW201) -> SW103 ARM -> PowerRailControl\nSW103 open = ignition side unpowered\n(hardware interlock, independent of firmware)\nC106 2200µ buffers the firing current pulses"
+		(exclude_from_sim no)
+		(at 40 44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3060fe14-b5c3-4f3d-a904-3ae5a55c68d0")
+	)
+	(text "CHANNEL DRIVER U102 74HC595\nSER=IO6, SRCLK=IO5, RCLK=IO4, /OE=IO21\nQA-QH -> Channel 1-8 (gates Q401-Q408)\nQH' unused (cascade for >8 channels)"
+		(exclude_from_sim no)
+		(at 237 146 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "80689843-fb28-424c-9590-ccf13b7958f3")
+	)
+	(text "FIRING CHAIN\n1. POWER (SW201) and ARM (SW103) closed\n2. IO15 -> Q301 switches the Ignition Rail ON\n3. 74HC595 output n -> channel FET Q40n fires igniter n\nCONTINUITY TEST: IO14 feeds 3.3 V via 1k into the rail,\nIO7 reads each channel via the ADC mux (IO9-IO11)"
+		(exclude_from_sim no)
+		(at 40 59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a15dbc15-39b2-42a8-bdba-163567986857")
+	)
+	(text "MCU U101 ESP32-S3-WROOM-1\nSW101 RESET: EN with RC R101/C103 (~10 ms power-on delay)\nSW102 BOOT: IO0 low at reset -> download mode, R102 pull-up\nC101 10µ / C102 100n: 3V3 bulk + decoupling at the module\nUSB D+/D- from J201 (ESD U202) -> native USB (flash + CDC)"
+		(exclude_from_sim no)
+		(at 15 172 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "bc0d999c-b999-4267-81b7-9b6aaec3d507")
+	)
+	(text "GPIO MAP\nIO3  Battery voltage (ADC)\nIO4/5/6  74HC595 RCLK / SRCLK / SER\nIO21  74HC595 /OE\nIO7  Continuity mux output (ADC)\nIO8  Ignition rail voltage (ADC)\nIO9/10/11  Mux select A2 / A1 / A0\nIO14  Rail test current ON\nIO15  Ignition rail ON\nIO16  WS2812B data\nIO19/20  USB D- / D+\nIO47  R103 10k pull-up (reserved)"
+		(exclude_from_sim no)
+		(at 237 116 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ea33124a-c344-4dd8-a445-f42fe5c60067")
+	)
+	(text "BATTERY SENSE -> IO3 (ADC1)\nR104/R105 100k/27k: 0-15.5 V -> 0-3.3 V\nC105 10n low-pass"
+		(exclude_from_sim no)
+		(at 40 107 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f4e4822c-7c3b-46b1-b461-401c0a8e0d3e")
+	)
 	(junction
 		(at 229.87 71.12)
 		(diameter 0)
@@ -3064,7 +3132,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f5385a6-9c76-4534-bfa7-705b5c77501a")
-		(property "Reference" "R35"
+		(property "Reference" "R105"
 			(at 74.93 94.996 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3128,7 +3196,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "R35")
+					(reference "R105")
 					(unit 1)
 				)
 			)
@@ -3380,7 +3448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1edcf2ae-087b-4fb5-a3d5-f8c16ac5e809")
-		(property "Reference" "U5"
+		(property "Reference" "U102"
 			(at 249.7933 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3486,7 +3554,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "U5")
+					(reference "U102")
 					(unit 1)
 				)
 			)
@@ -3503,8 +3571,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40bb4c23-033d-45bc-a37c-1c045409e957")
-		(property "Reference" "R7"
-			(at 205.232 94.234 90)
+		(property "Reference" "R102"
+			(at 206.502 94.234 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3565,7 +3633,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "R7")
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -3661,7 +3729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59006eb6-f47b-4265-b94b-21ddacac9998")
-		(property "Reference" "C1"
+		(property "Reference" "C101"
 			(at 189.23 157.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3725,7 +3793,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "C1")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -3821,7 +3889,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "678c425d-5614-4348-98e8-0c234480808e")
-		(property "Reference" "C6"
+		(property "Reference" "C102"
 			(at 177.8 157.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3885,7 +3953,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "C6")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -3902,8 +3970,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "73bd53ee-1cec-4ffa-a1cf-29b2dbdd5bd2")
-		(property "Reference" "R5"
-			(at 205.486 99.568 90)
+		(property "Reference" "R101"
+			(at 206.502 99.568 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3964,7 +4032,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "R5")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -3981,8 +4049,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "925443f3-e136-4459-a245-719940db6b8f")
-		(property "Reference" "C8"
-			(at 191.77 111.506 0)
+		(property "Reference" "C103"
+			(at 190.754 111.252 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3992,7 +4060,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 191.77 109.474 0)
+			(at 192.024 109.474 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4043,7 +4111,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "C8")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -4060,7 +4128,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9266917c-57c3-4fa3-9a4a-1570ae1aa9de")
-		(property "Reference" "U1"
+		(property "Reference" "U101"
 			(at 146.05 124.206 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4239,7 +4307,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "U1")
+					(reference "U101")
 					(unit 1)
 				)
 			)
@@ -4256,7 +4324,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94dad0d5-96ea-4e94-85aa-db3717bcf84a")
-		(property "Reference" "R20"
+		(property "Reference" "R104"
 			(at 64.77 94.996 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4320,7 +4388,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "R20")
+					(reference "R104")
 					(unit 1)
 				)
 			)
@@ -4337,7 +4405,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "962ffcb7-8123-4190-817b-3f67dbf93d56")
-		(property "Reference" "R14"
+		(property "Reference" "R103"
 			(at 129.794 143.764 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4399,7 +4467,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "R14")
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -4571,7 +4639,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3251ad3-7480-4e64-b990-897fde8b12e5")
-		(property "Reference" "SW4"
+		(property "Reference" "SW102"
 			(at 175.514 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4635,7 +4703,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "SW4")
+					(reference "SW102")
 					(unit 1)
 				)
 			)
@@ -4652,7 +4720,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d47cf0ba-12e8-45f2-baea-c2bbb3e1c39f")
-		(property "Reference" "SW5"
+		(property "Reference" "SW101"
 			(at 183.134 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4716,7 +4784,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "SW5")
+					(reference "SW101")
 					(unit 1)
 				)
 			)
@@ -4812,7 +4880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e72929e7-00ec-4a73-829c-6fffa18920de")
-		(property "Reference" "C-Buffer1"
+		(property "Reference" "C106"
 			(at 55.88 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4876,7 +4944,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "C-Buffer1")
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -4894,7 +4962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebfdfcc5-3191-444b-b66f-0094d940b181")
-		(property "Reference" "SW2"
+		(property "Reference" "SW103"
 			(at 71.12 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4904,7 +4972,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPST"
+		(property "Value" "ARM"
 			(at 71.12 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4956,7 +5024,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "SW2")
+					(reference "SW103")
 					(unit 1)
 				)
 			)
@@ -4973,8 +5041,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec6208de-0498-4a53-98c3-9fbfc8687791")
-		(property "Reference" "C7"
-			(at 244.094 61.468 90)
+		(property "Reference" "C104"
+			(at 246.634 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5037,7 +5105,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "C7")
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -5054,8 +5122,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6c8c06d-a304-410e-bc4e-3e6c4f41c1c5")
-		(property "Reference" "C32"
-			(at 71.12 89.154 0)
+		(property "Reference" "C105"
+			(at 71.12 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5065,7 +5133,7 @@
 			)
 		)
 		(property "Value" "0.01u"
-			(at 72.898 89.916 0)
+			(at 72.898 90.424 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5116,7 +5184,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
-					(reference "C32")
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -5335,7 +5403,7 @@
 				(justify right)
 			)
 		)
-		(pin "Trigger 3.3V" input
+		(pin "Trigger 3.3V on Rail" input
 			(at 122.555 31.75 0)
 			(uuid "52c7a2ff-213f-485a-a869-fbbc984591ef")
 			(effects
@@ -5345,7 +5413,7 @@
 				(justify right)
 			)
 		)
-		(pin "Trigger 12V" input
+		(pin "Trigger 12V on Rail" input
 			(at 122.555 34.29 0)
 			(uuid "7ccc612a-55ea-4396-a340-6b0d2211124f")
 			(effects

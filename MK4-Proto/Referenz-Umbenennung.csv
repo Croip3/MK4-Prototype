@@ -1,0 +1,110 @@
+Sheet;Alt;Neu
+Root (MCU);C1;C101
+Root (MCU);C6;C102
+Root (MCU);C8;C103
+Root (MCU);C7;C104
+Root (MCU);C32;C105
+Root (MCU);C-Buffer1;C106
+Root (MCU);R5;R101
+Root (MCU);R7;R102
+Root (MCU);R14;R103
+Root (MCU);R20;R104
+Root (MCU);R35;R105
+Root (MCU);SW5;SW101
+Root (MCU);SW4;SW102
+Root (MCU);SW2;SW103
+Root (MCU);U1;U101
+Root (MCU);U5;U102
+Power Management;BT1;BT201
+Power Management;C2_IN3;C201
+Power Management;C3_IN3;C202
+Power Management;C4_IN3;C203
+Power Management;C2_Buffer;C204
+Power Management;C4;C205
+Power Management;C1_BOOT3;C206
+Power Management;C5_OUT3;C207
+Power Management;C6_OUT3;C208
+Power Management;D14;D201
+Power Management;D16;D202
+Power Management;D15;D203
+Power Management;J10;J201
+Power Management;L3;L201
+Power Management;R23;R201
+Power Management;R24;R202
+Power Management;R21;R203
+Power Management;R22;R204
+Power Management;R16;R205
+Power Management;R17;R206
+Power Management;SW3;SW201
+Power Management;U2;U201
+Power Management;U7;U202
+PowerRailControl;D26;D301
+PowerRailControl;Q13;Q301
+PowerRailControl;Q12;Q302
+PowerRailControl;R34;R301
+PowerRailControl;R33;R302
+PowerRailControl;R31;R303
+PowerRailControl;R30;R304
+PowerRailControl;R32;R305
+Channels;J1;J401
+Channels;J2;J402
+Channels;J3;J403
+Channels;J4;J404
+Channels;J5;J405
+Channels;J6;J406
+Channels;J7;J407
+Channels;J8;J408
+Channels;Q11;Q401
+Channels;Q10;Q402
+Channels;Q9;Q403
+Channels;Q8;Q404
+Channels;Q7;Q405
+Channels;Q6;Q406
+Channels;Q3;Q407
+Channels;Q2;Q408
+Channels;R28;R401
+Channels;R27;R402
+Channels;R26;R403
+Channels;R12;R404
+Channels;R11;R405
+Channels;R10;R406
+Channels;R9;R407
+Channels;R8;R408
+LEDs;C21;C501
+LEDs;C22;C502
+LEDs;C23;C503
+LEDs;C24;C504
+LEDs;C25;C505
+LEDs;C26;C506
+LEDs;C27;C507
+LEDs;C28;C508
+LEDs;C29;C509
+LEDs;C30;C510
+LEDs;D4;D501
+LEDs;D17;D502
+LEDs;D18;D503
+LEDs;D19;D504
+LEDs;D20;D505
+LEDs;D21;D506
+LEDs;D22;D507
+LEDs;D23;D508
+LEDs;D24;D509
+LEDs;D25;D510
+LEDs;R25;R501
+Continuity Reading;C14;C601
+Continuity Reading;C15;C602
+Continuity Reading;C16;C603
+Continuity Reading;C17;C604
+Continuity Reading;C18;C605
+Continuity Reading;C19;C606
+Continuity Reading;C20;C607
+Continuity Reading;C31;C608
+Continuity Reading;C13;C609
+Continuity Reading;C11;C610
+Continuity Reading;R15;R601
+Continuity Reading;R29;R602
+Continuity Reading;RN3;RN601
+Continuity Reading;RN1;RN602
+Continuity Reading;RN4;RN603
+Continuity Reading;RN2;RN604
+Continuity Reading;U8;U601

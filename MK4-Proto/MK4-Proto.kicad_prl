@@ -67,8 +67,30 @@
     "version": 5
   },
   "net_inspector_panel": {
-    "col_hidden": [],
-    "col_order": [],
+    "col_hidden": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "col_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
     "col_widths": [],
     "custom_group_rules": [],
     "expanded_rows": [],
@@ -88,7 +110,10 @@
     "files": []
   },
   "schematic": {
-    "hierarchy_collapsed": [],
+    "hierarchy_collapsed": [
+      "/2d32a06c-c469-4f24-a34c-fc3e5c495252/",
+      "/afe7f86b-6679-4eca-9371-73ff0ce29f38/"
+    ],
     "selection_filter": {
       "graphics": true,
       "images": true,

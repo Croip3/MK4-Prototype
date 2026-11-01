@@ -1018,6 +1018,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "17c17530-f371-4293-930e-7f73b45f4b3b")
 	)
@@ -1058,6 +1059,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "28e709b5-3914-4fb7-b6ad-d4d2b07c8d07")
 	)
@@ -1118,6 +1120,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "3a513739-359f-4bbd-a86d-e124ab001e27")
 	)
@@ -1138,6 +1141,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "3c9fae2d-d6a9-45b8-acc1-66c3aed8b043")
 	)
@@ -1188,6 +1192,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "4a711a35-0730-471e-bed8-49ce6fac018a")
 	)
@@ -1208,6 +1213,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "516d4faa-55b1-40ab-94d9-d9c192862bfc")
 	)
@@ -1308,6 +1314,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "6eb1884e-f61f-472c-9fa1-9da2ffec5f3e")
 	)
@@ -1358,6 +1365,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "7e9bdf35-27e7-4093-9ca9-e686b53affb2")
 	)
@@ -1368,6 +1376,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "8261d83c-8a40-437e-93df-485a5c915f77")
 	)
@@ -1458,6 +1467,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "a2972dba-bb4a-42b8-bb5e-3faced00291e")
 	)
@@ -1468,6 +1478,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "a9d93166-6dc8-45f8-a7c3-700abea148c7")
 	)
@@ -1478,6 +1489,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "b07e6c05-648d-4fe5-a677-37b2cfe498f4")
 	)
@@ -1598,6 +1610,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "d1d13289-0812-4b70-bd20-fc8fbf019ddc")
 	)
@@ -1608,6 +1621,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "d6f8b143-1ab5-4788-ae1f-bb202a82450c")
 	)
@@ -1738,6 +1752,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "f8b3c110-5e2b-4aa6-b6c2-4efdc1f5b6d1")
 	)
@@ -1748,6 +1763,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 2 1)
 		)
 		(uuid "f9e28a43-1a91-4c89-b6c8-c196661b103c")
 	)
@@ -2237,7 +2253,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 189.23 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -2320,7 +2336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 227.33 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -2573,7 +2589,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 170.18 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -3087,7 +3103,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 151.13 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -3334,7 +3350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 208.28 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -3851,7 +3867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 113.03 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -3934,7 +3950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 93.98 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -4363,7 +4379,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 132.08 66.548 90)
 			(hide yes)
 			(show_name no)

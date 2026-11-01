@@ -673,22 +673,10 @@
 		(uuid "47151642-2ec1-4644-9388-cb86c9b7a9ed")
 	)
 	(junction
-		(at 92.71 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4950f281-0fb8-4108-8261-22df9ffb0517")
-	)
-	(junction
 		(at 171.45 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a845d08f-d04e-4856-ab37-deb794717d72")
-	)
-	(junction
-		(at 120.65 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aea73ee6-e847-4b92-ba61-eed7faebf2c6")
 	)
 	(wire
 		(pts
@@ -772,26 +760,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 46.99) (xy 118.11 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3081a7fa-edfc-4f43-8a86-654f5e793d19")
-	)
-	(wire
-		(pts
-			(xy 120.65 40.64) (xy 120.65 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33620933-f591-411b-a7e8-de888ae6c1af")
-	)
-	(wire
-		(pts
 			(xy 171.45 87.63) (xy 171.45 102.87)
 		)
 		(stroke
@@ -842,23 +810,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 87.63) (xy 189.23 87.63)
+			(xy 168.91 87.63) (xy 189.23 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5701d9c1-5b04-422e-966d-7f06ec2301b6")
-	)
-	(wire
-		(pts
-			(xy 92.71 74.93) (xy 92.71 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c3eada8-9a47-46bf-a494-17fbc28ae4a4")
 	)
 	(wire
 		(pts
@@ -869,16 +827,6 @@
 			(type default)
 		)
 		(uuid "5e61dcf7-475c-411f-a6e4-c9b552d37976")
-	)
-	(wire
-		(pts
-			(xy 85.09 74.93) (xy 85.09 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61fcbbc4-fa82-4bba-b550-4791de3e82ec")
 	)
 	(wire
 		(pts
@@ -902,17 +850,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 87.63) (xy 92.71 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d020f0e-e636-48c2-ba51-ecb1eb58aea9")
-	)
-	(wire
-		(pts
-			(xy 90.17 74.93) (xy 90.17 92.71)
+			(xy 87.63 74.93) (xy 87.63 92.71)
 		)
 		(stroke
 			(width 0)
@@ -952,13 +890,25 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 40.64) (xy 181.61 40.64)
+			(xy 78.74 40.64) (xy 181.61 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 6 1)
 		)
 		(uuid "8138930b-c2c7-4491-a49c-16ceae37adee")
+	)
+	(wire
+		(pts
+			(xy 90.17 74.93) (xy 90.17 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 6 1)
+		)
+		(uuid "86849128-45f9-42fe-a3f1-f43e286de1e0")
 	)
 	(wire
 		(pts
@@ -1072,7 +1022,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 74.93) (xy 87.63 92.71)
+			(xy 85.09 74.93) (xy 85.09 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1129,16 +1079,6 @@
 			(type default)
 		)
 		(uuid "e28dcede-b7bc-45fa-a0f6-48796d8ef926")
-	)
-	(wire
-		(pts
-			(xy 78.74 40.64) (xy 120.65 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4bd2edb-54f0-465f-8fdf-20948cfa2ff2")
 	)
 	(wire
 		(pts
@@ -1206,7 +1146,7 @@
 	)
 	(hierarchical_label "Sense Enable"
 		(shape input)
-		(at 90.17 92.71 270)
+		(at 87.63 92.71 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1214,6 +1154,17 @@
 			(justify right)
 		)
 		(uuid "51fcac69-c082-45e8-97f2-9655332a971b")
+	)
+	(hierarchical_label "MUX Supply"
+		(shape input)
+		(at 90.17 92.71 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f5877e0-469d-4a52-bff6-9f0ccf27269d")
 	)
 	(hierarchical_label "A2"
 		(shape input)
@@ -1226,20 +1177,9 @@
 		)
 		(uuid "a474a99f-b205-4c43-9308-b388f71da288")
 	)
-	(hierarchical_label "Sense Rail"
-		(shape output)
-		(at 85.09 92.71 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ba874512-eec8-49c4-a70b-edb7b3cb1df4")
-	)
 	(hierarchical_label "Data"
 		(shape output)
-		(at 87.63 92.71 270)
+		(at 85.09 92.71 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1283,7 +1223,7 @@
 	)
 	(hierarchical_label "3.3V"
 		(shape input)
-		(at 92.71 92.71 270)
+		(at 168.91 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1900,8 +1840,8 @@
 		)
 	)
 	(sheet
-		(at 73.66 45.72)
-		(size 44.45 29.21)
+		(at 73.66 47.625)
+		(size 44.45 27.305)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1916,7 +1856,7 @@
 		)
 		(uuid "3f239518-fe12-45f6-acec-228a5b832146")
 		(property "Sheetname" "Continuity Reading"
-			(at 73.66 45.0084 0)
+			(at 73.66 46.9134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1936,16 +1876,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "3.3V" input
-			(at 92.71 74.93 270)
-			(uuid "462d8cee-4350-4511-ad75-9a10db31e690")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "A0" input
@@ -1979,7 +1909,7 @@
 			)
 		)
 		(pin "Data" output
-			(at 87.63 74.93 270)
+			(at 85.09 74.93 270)
 			(uuid "38dc8079-b28b-4dfa-bb61-5cf8bba4461a")
 			(effects
 				(font
@@ -2068,19 +1998,9 @@
 				(justify right)
 			)
 		)
-		(pin "Sense Rail IN" input
-			(at 118.11 46.99 0)
-			(uuid "906e0aed-1019-467e-a8f5-0877fcd75a46")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Sense Rail OUT" output
-			(at 85.09 74.93 270)
-			(uuid "e04b0dca-f169-434f-9035-88c0ade43140")
+		(pin "Enable Sense" input
+			(at 87.63 74.93 270)
+			(uuid "d6e2deae-afca-4d30-b8c4-bc87f90820f9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2088,9 +2008,9 @@
 				(justify left)
 			)
 		)
-		(pin "Enable Sense" input
+		(pin "12V" input
 			(at 90.17 74.93 270)
-			(uuid "d6e2deae-afca-4d30-b8c4-bc87f90820f9")
+			(uuid "9657bcf2-212b-42b2-b9de-75298d554cd4")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -690,20 +690,12 @@
       "PowerRailControl"
     ],
     [
-      "2d32a06c-c469-4f24-a34c-fc3e5c495252",
-      "ChannelBankA"
-    ],
-    [
       "42b5327a-fc7d-4aa6-a5f4-11b47a45f214",
       "LEDs"
     ],
     [
-      "038f6df7-9527-42ed-9f51-ac6a61654678",
-      "Channels"
-    ],
-    [
-      "afe7f86b-6679-4eca-9371-73ff0ce29f38",
-      "ChannelBankB"
+      "2d32a06c-c469-4f24-a34c-fc3e5c495252",
+      "ChannelBankA"
     ],
     [
       "038f6df7-9527-42ed-9f51-ac6a61654678",
@@ -712,6 +704,14 @@
     [
       "3f239518-fe12-45f6-acec-228a5b832146",
       "Continuity Reading"
+    ],
+    [
+      "afe7f86b-6679-4eca-9371-73ff0ce29f38",
+      "ChannelBankB"
+    ],
+    [
+      "038f6df7-9527-42ed-9f51-ac6a61654678",
+      "Channels"
     ],
     [
       "3f239518-fe12-45f6-acec-228a5b832146",

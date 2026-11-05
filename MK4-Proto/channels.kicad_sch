@@ -764,7 +764,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "IGNITION CHANNELS 1-8 (low-side switches)\nChannel n: J40n terminal (Pin 2 = Ignition Rail, Pin 1 = igniter return)\nQ40n AO3400A N-FET pulls the igniter to GND when 'Channel n' is high\nR40n 10k gate pull-down keeps the channel OFF while the driver is undriven\nDrain node = 'Continuity Sense n' -> divider + mux (Continuity Reading)\nAn igniter only fires if the Ignition Rail is ON (Q301) AND Q40n is ON"
+	(text "IGNITION CHANNELS 1-8 of this bank (low-side switches)\nBank A = CH1-8:  J601-J608, Q601-Q608, R601-R608\nBank B = CH9-16: J901-J908, Q901-Q908, R901-R908\nTerminal: Pin 2 = Ignition Rail, Pin 1 = igniter return\nAO3400A N-FET pulls the igniter to GND when 'Channel n' is high\n10k gate pull-down keeps the channel OFF while the driver is undriven\nDrain node = 'Continuity Sense n' -> divider + mux (Continuity Reading)\nAn igniter only fires if the Ignition Rail is ON (Q301) AND its FET is ON\nValues 'Igniter CH1-8' = channel number within the bank"
 		(exclude_from_sim no)
 		(at 86.36 94.742 0)
 		(effects
@@ -1976,7 +1976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "042ab514-d267-4b85-8298-1a710837311f")
-		(property "Reference" "#PWR0605"
+		(property "Reference" "#PWR605"
 			(at 173.99 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -2036,11 +2036,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0605")
+					(reference "#PWR605")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0905")
+					(reference "#PWR905")
 					(unit 1)
 				)
 			)
@@ -2744,7 +2744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35f703a7-0e03-484e-ba9c-9d93090da753")
-		(property "Reference" "#PWR0604"
+		(property "Reference" "#PWR604"
 			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -2804,11 +2804,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0604")
+					(reference "#PWR604")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0904")
+					(reference "#PWR904")
 					(unit 1)
 				)
 			)
@@ -3002,7 +3002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "410fe766-8c94-47e7-b8ff-561f474f1369")
-		(property "Reference" "#PWR0602"
+		(property "Reference" "#PWR602"
 			(at 116.84 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3062,11 +3062,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0602")
+					(reference "#PWR602")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0902")
+					(reference "#PWR902")
 					(unit 1)
 				)
 			)
@@ -3167,7 +3167,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a546884-f444-42dd-bf73-4dc57017b0ee")
-		(property "Reference" "#PWR0606"
+		(property "Reference" "#PWR606"
 			(at 193.04 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3227,11 +3227,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0606")
+					(reference "#PWR606")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0906")
+					(reference "#PWR906")
 					(unit 1)
 				)
 			)
@@ -3249,7 +3249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56a45e21-21d5-43e4-befa-d05aa2fdff2b")
-		(property "Reference" "#PWR0607"
+		(property "Reference" "#PWR607"
 			(at 212.09 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3309,11 +3309,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0607")
+					(reference "#PWR607")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0907")
+					(reference "#PWR907")
 					(unit 1)
 				)
 			)
@@ -3675,7 +3675,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c7fc951-6da5-4fe6-ac9b-1e30a8f6a0b4")
-		(property "Reference" "#PWR0601"
+		(property "Reference" "#PWR601"
 			(at 97.79 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3735,11 +3735,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0601")
+					(reference "#PWR601")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0901")
+					(reference "#PWR901")
 					(unit 1)
 				)
 			)
@@ -4196,7 +4196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a88addaa-d313-43e9-af63-1206a9ab64e1")
-		(property "Reference" "#PWR0608"
+		(property "Reference" "#PWR608"
 			(at 231.14 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -4256,11 +4256,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0608")
+					(reference "#PWR608")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0908")
+					(reference "#PWR908")
 					(unit 1)
 				)
 			)
@@ -4278,7 +4278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c961b009-87a9-4ba5-93f1-fdd4d1d18f54")
-		(property "Reference" "#PWR0603"
+		(property "Reference" "#PWR603"
 			(at 135.89 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -4338,11 +4338,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0603")
+					(reference "#PWR603")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38/038f6df7-9527-42ed-9f51-ac6a61654678"
-					(reference "#PWR0903")
+					(reference "#PWR903")
 					(unit 1)
 				)
 			)

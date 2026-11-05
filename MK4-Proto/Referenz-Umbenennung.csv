@@ -1,110 +1,97 @@
 Sheet;Alt;Neu
-Root (MCU);C1;C101
-Root (MCU);C6;C102
-Root (MCU);C8;C103
-Root (MCU);C7;C104
-Root (MCU);C32;C105
-Root (MCU);C-Buffer1;C106
-Root (MCU);R5;R101
-Root (MCU);R7;R102
-Root (MCU);R14;R103
-Root (MCU);R20;R104
-Root (MCU);R35;R105
-Root (MCU);SW5;SW101
-Root (MCU);SW4;SW102
-Root (MCU);SW2;SW103
-Root (MCU);U1;U101
-Root (MCU);U5;U102
-Power Management;BT1;BT201
-Power Management;C2_IN3;C201
-Power Management;C3_IN3;C202
-Power Management;C4_IN3;C203
-Power Management;C2_Buffer;C204
-Power Management;C4;C205
-Power Management;C1_BOOT3;C206
-Power Management;C5_OUT3;C207
-Power Management;C6_OUT3;C208
-Power Management;D14;D201
-Power Management;D16;D202
-Power Management;D15;D203
-Power Management;J10;J201
-Power Management;L3;L201
-Power Management;R23;R201
-Power Management;R24;R202
-Power Management;R21;R203
-Power Management;R22;R204
-Power Management;R16;R205
-Power Management;R17;R206
-Power Management;SW3;SW201
-Power Management;U2;U201
-Power Management;U7;U202
-PowerRailControl;D26;D301
-PowerRailControl;Q13;Q301
-PowerRailControl;Q12;Q302
-PowerRailControl;R34;R301
-PowerRailControl;R33;R302
-PowerRailControl;R31;R303
-PowerRailControl;R30;R304
-PowerRailControl;R32;R305
-Channels;J1;J401
-Channels;J2;J402
-Channels;J3;J403
-Channels;J4;J404
-Channels;J5;J405
-Channels;J6;J406
-Channels;J7;J407
-Channels;J8;J408
-Channels;Q11;Q401
-Channels;Q10;Q402
-Channels;Q9;Q403
-Channels;Q8;Q404
-Channels;Q7;Q405
-Channels;Q6;Q406
-Channels;Q3;Q407
-Channels;Q2;Q408
-Channels;R28;R401
-Channels;R27;R402
-Channels;R26;R403
-Channels;R12;R404
-Channels;R11;R405
-Channels;R10;R406
-Channels;R9;R407
-Channels;R8;R408
-LEDs;C21;C501
-LEDs;C22;C502
-LEDs;C23;C503
-LEDs;C24;C504
-LEDs;C25;C505
-LEDs;C26;C506
-LEDs;C27;C507
-LEDs;C28;C508
-LEDs;C29;C509
-LEDs;C30;C510
-LEDs;D4;D501
-LEDs;D17;D502
-LEDs;D18;D503
-LEDs;D19;D504
-LEDs;D20;D505
-LEDs;D21;D506
-LEDs;D22;D507
-LEDs;D23;D508
-LEDs;D24;D509
-LEDs;D25;D510
-LEDs;R25;R501
-Continuity Reading;C14;C601
-Continuity Reading;C15;C602
-Continuity Reading;C16;C603
-Continuity Reading;C17;C604
-Continuity Reading;C18;C605
-Continuity Reading;C19;C606
-Continuity Reading;C20;C607
-Continuity Reading;C31;C608
-Continuity Reading;C13;C609
-Continuity Reading;C11;C610
-Continuity Reading;R15;R601
-Continuity Reading;R29;R602
-Continuity Reading;RN3;RN601
-Continuity Reading;RN1;RN602
-Continuity Reading;RN4;RN603
-Continuity Reading;RN2;RN604
-Continuity Reading;U8;U601
+Root (MCU);C106;C104
+Root (MCU);R104;R103
+Root (MCU);R103;R104
+Root (MCU);P101;TP101
+Root (MCU);P102;TP102
+Root (MCU);P103;TP103
+Root (MCU);P104;TP104
+Root (MCU);P105;TP105
+Root (MCU);GND101;TP106
+Root (MCU);GND102;TP107
+Root (MCU);GND103;TP108
+Root (MCU);GND104;TP109
+Root (MCU);GND105;TP110
+Root (MCU);D18;TP111
+Root (MCU);D10;TP112
+Root (MCU);D11;TP113
+Root (MCU);D31;TP114
+Root (MCU);D32;TP115
+Root (MCU);D33;TP116
+Root (MCU);D34;TP117
+Root (MCU);D35;TP118
+Power Management;C210;C209
+Power Management;R209;R207
+Power Management;R210;R208
+LEDs;C501;C401
+LEDs;C502;C402
+LEDs;C503;C403
+LEDs;C504;C404
+LEDs;C505;C405
+LEDs;C506;C406
+LEDs;C507;C407
+LEDs;C508;C408
+LEDs;C511;C409
+LEDs;C512;C410
+LEDs;C513;C411
+LEDs;C514;C412
+LEDs;C515;C413
+LEDs;C516;C414
+LEDs;C517;C415
+LEDs;C518;C416
+LEDs;C519;C417
+LEDs;C520;C418
+LEDs;C509;C419
+LEDs;D501;D401
+LEDs;D502;D402
+LEDs;D503;D403
+LEDs;D504;D404
+LEDs;D505;D405
+LEDs;D506;D406
+LEDs;D507;D407
+LEDs;D508;D408
+LEDs;D511;D409
+LEDs;D512;D410
+LEDs;D513;D411
+LEDs;D514;D412
+LEDs;D515;D413
+LEDs;D516;D414
+LEDs;D517;D415
+LEDs;D518;D416
+LEDs;D519;D417
+LEDs;D520;D418
+LEDs;R501;R401
+ChannelBankA;C401;C501
+ChannelBankA;U401;U501
+ChannelBankA/Continuity Reading;C1003;C701
+ChannelBankA/Continuity Reading;C1004;C702
+ChannelBankA/Continuity Reading;C1005;C703
+ChannelBankA/Continuity Reading;C1006;C704
+ChannelBankA/Continuity Reading;C1007;C705
+ChannelBankA/Continuity Reading;C1008;C706
+ChannelBankA/Continuity Reading;C1009;C707
+ChannelBankA/Continuity Reading;C1010;C708
+ChannelBankA/Continuity Reading;C1001;C709
+ChannelBankA/Continuity Reading;C1002;C710
+ChannelBankA/Continuity Reading;R1001;R701
+ChannelBankA/Continuity Reading;RN1001;RN701
+ChannelBankA/Continuity Reading;RN1002;RN702
+ChannelBankA/Continuity Reading;RN1003;RN703
+ChannelBankA/Continuity Reading;RN1004;RN704
+ChannelBankA/Continuity Reading;U1002;U701
+ChannelBankB/Continuity Reading;C1013;C1001
+ChannelBankB/Continuity Reading;C1014;C1002
+ChannelBankB/Continuity Reading;C1015;C1003
+ChannelBankB/Continuity Reading;C1016;C1004
+ChannelBankB/Continuity Reading;C1017;C1005
+ChannelBankB/Continuity Reading;C1018;C1006
+ChannelBankB/Continuity Reading;C1019;C1007
+ChannelBankB/Continuity Reading;C1020;C1008
+ChannelBankB/Continuity Reading;C901;C1009
+ChannelBankB/Continuity Reading;C912;C1010
+ChannelBankB/Continuity Reading;R909;R1001
+ChannelBankB/Continuity Reading;RN1005;RN1001
+ChannelBankB/Continuity Reading;RN1006;RN1002
+ChannelBankB/Continuity Reading;RN1007;RN1003
+ChannelBankB/Continuity Reading;RN1008;RN1004
+ChannelBankB/Continuity Reading;U1004;U1001

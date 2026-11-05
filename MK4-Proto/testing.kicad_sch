@@ -9,6 +9,7 @@
 		(date "2026-10-24")
 		(comment 1 "High-side P-FET switch for the ignition rail (IO15)")
 		(comment 2 "Current-limited 3.3 V test feed for continuity check (IO14)")
+		(comment 3 "Rail voltage divider -> Sense Rail OUT (IO8)")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1249,6 +1250,17 @@
 		)
 		(uuid "1740fcc0-7a1e-40e9-a825-2d7c1de1e15c")
 	)
+	(text "RAIL SENSE -> Sense Rail OUT -> IO8 (ADC1)\nIgnition Rail -> R306 100k / R307 27k, C301 10n\n0-15.5 V -> 0-3.3 V (same scaling as battery and channels)"
+		(exclude_from_sim no)
+		(at 178 115 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6cd1e131-b9bc-436d-a7ca-38c93f0a86fb")
+	)
 	(text "RAIL TEST CURRENT (continuity check)\nIO14 (Trigger 3.3V on Rail) -> R305 1k -> D301 -> Ignition Rail\nCurrent limited to < 2.6 mA, well below igniter no-fire current\nD301 blocks the 12 V rail from back-feeding the GPIO"
 		(exclude_from_sim no)
 		(at 100 130 0)
@@ -1655,7 +1667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27a6a38a-9742-40c3-a003-662bb737f84c")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR302"
 			(at 148.59 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -1715,7 +1727,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "#PWR0302")
+					(reference "#PWR302")
 					(unit 1)
 				)
 			)
@@ -1922,7 +1934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "417065bc-cc2c-453d-8472-f3d8cfd9a28f")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR301"
 			(at 185.42 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -1982,7 +1994,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/a5c8ff65-3b6c-4498-b77f-a1ebe1c983a4"
-					(reference "#PWR0301")
+					(reference "#PWR301")
 					(unit 1)
 				)
 			)

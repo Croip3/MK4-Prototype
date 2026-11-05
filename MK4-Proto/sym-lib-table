@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "MK4") (type "KiCad") (uri "${KIPRJMOD}/MK4.pretty") (options "") (descr ""))
+)

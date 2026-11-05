@@ -7,6 +7,10 @@
 	(title_block
 		(title "Channel Bank")
 		(date "2026-11-01")
+		(comment 1 "8-channel bank: 74HC595 driver + Channels + Continuity Reading")
+		(comment 2 "ChannelBankB = CH9-16 (refs 8xx-10xx)")
+		(comment 3 "ChannelBankA = CH1-8 (refs 5xx-7xx)")
+		(comment 4 "Used twice:")
 	)
 	(lib_symbols
 		(symbol "74xx:74HC595"
@@ -666,6 +670,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "CHANNEL BANK (8 channels) - this sheet is used twice\nChannelBankA: CH1-8,  U501/C501, Channels 6xx, Continuity 7xx\nChannelBankB: CH9-16, U801/C801, Channels 9xx, Continuity 10xx\n\n74HC595: QA..QH -> Channel 1..8, QH' -> Shift Register Chain\n  Bank A: SER = IO4, chain -> SER of Bank B\n  Bank B: chain -> IO1 (readback)\nSRCLK / RCLK shared, /SRCLR tied to 3.3 V, 100n decoupling\n/OE = Channel Enable (10k pull-up on root -> outputs OFF at boot)\nSense Enable -> mux /EN, MUX Supply -> mux VDD\n8-channel build: fit only bank A and close JP101 (root)"
+		(exclude_from_sim no)
+		(at 20 110 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9f030a2e-8318-4fc1-bc4b-fada0bb4fffd")
+	)
 	(junction
 		(at 189.23 87.63)
 		(diameter 0)
@@ -1255,7 +1270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54257bd9-3c8e-49aa-893f-82df6a060f75")
-		(property "Reference" "#PWR0402"
+		(property "Reference" "#PWR502"
 			(at 189.23 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -1315,11 +1330,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252"
-					(reference "#PWR0402")
+					(reference "#PWR502")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38"
-					(reference "#PWR0802")
+					(reference "#PWR802")
 					(unit 1)
 				)
 			)
@@ -1336,7 +1351,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c5bb5e91-db05-44ab-8d03-94639d943fbe")
-		(property "Reference" "#PWR0401"
+		(property "Reference" "#PWR501"
 			(at 175.26 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1396,11 +1411,11 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252"
-					(reference "#PWR0401")
+					(reference "#PWR501")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38"
-					(reference "#PWR0801")
+					(reference "#PWR801")
 					(unit 1)
 				)
 			)
@@ -1418,7 +1433,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9a286b2-60d7-4ced-b710-766b06183388")
-		(property "Reference" "U401"
+		(property "Reference" "U501"
 			(at 191.3733 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1524,7 +1539,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252"
-					(reference "U401")
+					(reference "U501")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38"
@@ -1545,7 +1560,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca9b02d1-c8f3-40cf-8444-929ddadaf8c1")
-		(property "Reference" "C401"
+		(property "Reference" "C501"
 			(at 188.214 77.978 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1609,7 +1624,7 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252"
-					(reference "C401")
+					(reference "C501")
 					(unit 1)
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38"
@@ -1834,7 +1849,7 @@
 					(page "6")
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38"
-					(page "8")
+					(page "9")
 				)
 			)
 		)
@@ -2021,10 +2036,10 @@
 		(instances
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/2d32a06c-c469-4f24-a34c-fc3e5c495252"
-					(page "10")
+					(page "7")
 				)
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287/afe7f86b-6679-4eca-9371-73ff0ce29f38"
-					(page "9")
+					(page "10")
 				)
 			)
 		)

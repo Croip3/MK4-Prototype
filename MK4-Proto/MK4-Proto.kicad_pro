@@ -153,7 +153,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -497,7 +497,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -513,6 +513,24 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "FinePitch",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -520,7 +538,48 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "FinePitch",
+        "pattern": "Net-(RN*"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "Net-(U701-VDD)"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "Net-(U1001-VDD)"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "/ChannelBankA/A0"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "/ChannelBankA/A1"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "/ChannelBankA/A2"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "/ChannelBankA/Data"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "/ChannelBankA/Sense Enable"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "/ChannelBankB/Sense Enable"
+      },
+      {
+        "netclass": "FinePitch",
+        "pattern": "Net-(J201-*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

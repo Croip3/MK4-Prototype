@@ -1,0 +1,94 @@
+(footprint "CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CAMDENBOSS CTB932VE/2, 3.81mm pluggable male header, 2 pole, vertical, closed ends, 8A 125V; +y = code side (4.0mm from pin axis, 3.0mm on the other side); hole 1.4mm per datasheet")
+	(tags "camdenboss camblock CTB932VE header pluggable 3.81mm")
+	(property "Reference" "REF**"
+		(at 1.905 2.35 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
+		(at 1.905 5.2 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2.3 -3)
+		(end 6.11 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -2.41 -3.11)
+		(end 6.22 4.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -2.41 3.5)
+		(end 6.22 3.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -2.55 -3.25)
+		(end 6.36 4.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "2" thru_hole circle
+		(at 3.81 0)
+		(size 2.4 2.4)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/MK4.3dshapes/CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

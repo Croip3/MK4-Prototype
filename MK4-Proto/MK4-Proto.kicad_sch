@@ -9,9 +9,126 @@
 		(date "2026-10-02")
 		(rev "0")
 		(comment 1 "ESP32-S3 node: MCU, 2 x 8-channel banks (16 CH), ARM switch, test points")
-		(comment 2 "Refs <page><nn>: 1 root, 2 power, 3 rail ctrl, 4 LEDs, 5-7 bank A (595/CH/sense), 8-10 bank B")
+		(comment 2 "    8-10 bank B (595/CH/sense)")
+		(comment 3 "    5-7 bank A (595/CH/sense)")
+		(comment 4 "Refs <page><nn>:1 root, 2 power, 3 rail ctrl, 4 LEDs,")
 	)
 	(lib_symbols
+		(symbol "PWR_FLAG:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -1922,7 +2039,7 @@
 		)
 		(uuid "80689843-fb28-424c-9590-ccf13b7958f3")
 	)
-	(text "FIRING CHAIN\n1. POWER (SW201) and ARM (SW103) closed\n2. IO15 -> Q301 switches the Ignition Rail ON\n3. 74HC595 output n -> channel FET n fires igniter n\n   Bank A: U501 -> Q601-Q608 (CH1-8)\n   Bank B: U801 -> Q901-Q908 (CH9-16)\n\nCONTINUITY TEST: IO14 feeds 3.3 V via 1k into the rail,\nIO7 reads each channel via the ADC muxes (select IO11-IO13,\n/EN Bank A = IO6, Bank B = IO5 - enable only one mux at a time)"
+	(text "FIRING CHAIN\n1. POWER (SW201) and ARM (SW103) closed\n2. IO15 -> Q301 switches the Ignition Rail ON\n3. 74HC595 output n -> channel FET n fires igniter n\n   Bank A: U501 -> Q601-Q608 (CH1-8)\n   Bank B: U801 -> Q901-Q908 (CH9-16)\n\nCONTINUITY TEST: IO14 feeds 3.3 V via 1k into the rail,\nIO7 reads each channel via the ADC muxes \n	select IO11-IO13\n	/EN -> enable only one mux at a time\n		Bank A = IO6\n		Bank B = IO5 "
 		(exclude_from_sim no)
 		(at 40.894 62.23 0)
 		(effects
@@ -2210,6 +2327,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 31.75) (xy 59.69 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d4a7b8d-c6eb-425b-9eca-dd2d60acbbc6")
+	)
+	(wire
+		(pts
 			(xy 161.29 77.47) (xy 204.47 77.47)
 		)
 		(stroke
@@ -2373,7 +2500,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 80.01) (xy 167.64 80.01)
+			(xy 119.38 80.01) (xy 167.64 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3383,7 +3510,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 82.55) (xy 120.65 82.55)
+			(xy 123.19 82.55) (xy 119.38 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3441,6 +3568,83 @@
 			(color 255 0 6 1)
 		)
 		(uuid "fed61e39-5c9d-49b1-a570-d90951c8689c")
+	)
+	(symbol
+		(lib_id "PWR_FLAG:PWR_FLAG")
+		(at 59.69 31.75 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b925c3e4-f94d-4a2e-925e-04b46ab82f6b")
+		(property "Reference" "#FLG101"
+			(at 59.69 33.655 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 59.69 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 59.69 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f132b02e-68ad-4ea8-9ec6-e7a8478e214e")
+		)
+		(instances
+			(project "MK4-Proto"
+				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
+					(reference "#FLG101")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -5212,7 +5416,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 213.36 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6411,7 +6615,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 52.07 27.94 180)
+		(at 52.07 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6429,7 +6633,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "2200u"
@@ -6440,7 +6644,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
@@ -6935,7 +7139,7 @@
 		)
 	)
 	(sheet
-		(at 107.95 78.74)
+		(at 106.68 78.74)
 		(size 12.7 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6951,7 +7155,7 @@
 		)
 		(uuid "42b5327a-fc7d-4aa6-a5f4-11b47a45f214")
 		(property "Sheetname" "LEDs"
-			(at 107.95 78.0284 0)
+			(at 106.68 78.0284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6962,7 +7166,7 @@
 			)
 		)
 		(property "Sheetfile" "leds.kicad_sch"
-			(at 107.95 84.4046 0)
+			(at 106.68 84.4046 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6974,7 +7178,7 @@
 			)
 		)
 		(pin "3.3V" input
-			(at 120.65 80.01 0)
+			(at 119.38 80.01 0)
 			(uuid "2185bae2-c290-4e31-94b8-fa7c65cbe1ce")
 			(effects
 				(font
@@ -6984,7 +7188,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 120.65 82.55 0)
+			(at 119.38 82.55 0)
 			(uuid "506c8dd6-3570-465f-b81f-63914b8815cc")
 			(effects
 				(font

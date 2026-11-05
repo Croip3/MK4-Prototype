@@ -2079,7 +2079,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 97.79 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2421,7 +2421,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 193.04 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2506,7 +2506,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 173.99 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2847,7 +2847,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 212.09 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -3435,7 +3435,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 135.89 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -3520,7 +3520,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 231.14 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -4555,7 +4555,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 116.84 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -4640,7 +4640,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1-2-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "MK4:CamdenBoss_CTB932VE-2_1x02_P3.81mm_Vertical"
 			(at 154.94 27.94 0)
 			(hide yes)
 			(show_name no)

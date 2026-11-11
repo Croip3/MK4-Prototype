@@ -2052,9 +2052,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "0b9b343b-c9ed-4d5b-90a2-5eb25a750ac0")
 		(property "Reference" "J601"
@@ -2177,6 +2177,15 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 133.35 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 138.43 57.15 0)
 			(hide yes)
@@ -2258,6 +2267,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 189.23 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2347,6 +2365,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 227.33 64.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 227.33 64.77 0)
 			(hide yes)
@@ -2394,9 +2421,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2d94cef9-68e5-46fe-9087-ec930981a35b")
 		(property "Reference" "J606"
@@ -2479,9 +2506,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "30305ebd-c41a-485a-ba02-c6f95431424e")
 		(property "Reference" "J605"
@@ -2600,6 +2627,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 170.18 64.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 170.18 64.77 0)
 			(hide yes)
@@ -2685,6 +2721,15 @@
 					(italic yes)
 				)
 				(justify left)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 114.3 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
@@ -2820,9 +2865,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "389b5613-94cd-445f-b62d-fc15f4f26379")
 		(property "Reference" "J607"
@@ -2943,6 +2988,15 @@
 					(italic yes)
 				)
 				(justify left)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 95.25 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
@@ -3108,6 +3162,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 151.13 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3361,6 +3424,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 208.28 64.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 208.28 64.77 0)
 			(hide yes)
@@ -3408,9 +3480,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "70381384-df3b-4c3c-8cf0-7e0c6c532023")
 		(property "Reference" "J603"
@@ -3493,9 +3565,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "718c2ccb-624d-49cc-b598-9bc6e3f44912")
 		(property "Reference" "J608"
@@ -3616,6 +3688,15 @@
 					(italic yes)
 				)
 				(justify left)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 228.6 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
@@ -3791,6 +3872,15 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 209.55 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 214.63 57.15 0)
 			(hide yes)
@@ -3878,6 +3968,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 113.03 64.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 113.03 64.77 0)
 			(hide yes)
@@ -3955,6 +4054,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 93.98 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,6 +4156,15 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 171.45 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 176.53 57.15 0)
 			(hide yes)
@@ -4137,6 +4254,15 @@
 					(italic yes)
 				)
 				(justify left)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 152.4 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
@@ -4390,6 +4516,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 132.08 64.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 132.08 64.77 0)
 			(hide yes)
@@ -4477,6 +4612,15 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 190.5 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 195.58 57.15 0)
 			(hide yes)
@@ -4528,9 +4672,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "ea8198b7-56b8-4a86-a4b6-9dcd48281188")
 		(property "Reference" "J602"
@@ -4613,9 +4757,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "eca0f084-5a1f-42a3-875f-eba17703ca60")
 		(property "Reference" "J604"

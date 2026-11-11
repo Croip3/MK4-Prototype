@@ -2256,6 +2256,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 140.97 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 143.51 128.905 0)
 			(hide yes)
@@ -2420,6 +2429,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 83.82 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 83.82 110.49 0)
 			(hide yes)
@@ -2578,6 +2596,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 110.49 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 113.03 62.865 0)
 			(hide yes)
@@ -2665,6 +2692,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 110.49 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 113.03 128.905 0)
 			(hide yes)
@@ -2750,6 +2786,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 125.73 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -2916,6 +2961,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 129.54 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 129.54 44.45 0)
 			(hide yes)
@@ -2994,6 +3048,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 156.21 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -3316,6 +3379,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 114.3 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 114.3 110.49 0)
 			(hide yes)
@@ -3473,6 +3545,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 144.78 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 144.78 110.49 0)
 			(hide yes)
@@ -3546,6 +3627,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 190.5 110.49 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,6 +3878,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 186.69 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 189.23 62.865 0)
 			(hide yes)
@@ -3952,6 +4051,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 99.06 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 99.06 110.49 0)
 			(hide yes)
@@ -4030,6 +4138,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 186.69 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -4118,6 +4235,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 144.78 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 144.78 44.45 0)
 			(hide yes)
@@ -4191,6 +4317,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 83.82 77.47 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4276,6 +4411,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 99.06 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 99.06 44.45 0)
 			(hide yes)
@@ -4354,6 +4498,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 125.73 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -4442,6 +4595,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 83.82 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 83.82 44.45 0)
 			(hide yes)
@@ -4515,6 +4677,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 160.02 110.49 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4600,6 +4771,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 190.5 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 190.5 44.45 0)
 			(hide yes)
@@ -4678,6 +4858,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 171.45 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -5001,6 +5190,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 80.01 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 82.55 62.865 0)
 			(hide yes)
@@ -5088,6 +5286,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 156.21 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 158.75 128.905 0)
 			(hide yes)
@@ -5168,6 +5375,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 114.3 44.45 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5410,6 +5626,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 80.01 86.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 82.55 95.885 0)
 			(hide yes)
@@ -5495,6 +5720,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 95.25 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -5662,6 +5896,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 95.25 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 97.79 62.865 0)
 			(hide yes)
@@ -5747,6 +5990,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 80.01 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -5835,6 +6087,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 175.26 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 175.26 44.45 0)
 			(hide yes)
@@ -5913,6 +6174,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 171.45 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -6157,6 +6427,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C15850"
+			(at 68.58 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 68.58 44.45 0)
 			(hide yes)
@@ -6313,6 +6592,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C52917433"
+			(at 95.25 86.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
@@ -6480,6 +6768,15 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C52917433"
+			(at 140.97 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 143.51 62.865 0)
 			(hide yes)
@@ -6560,6 +6857,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 175.26 110.49 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6723,6 +7029,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 99.06 77.47 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 99.06 77.47 0)
 			(hide yes)
@@ -6796,6 +7111,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 160.02 44.45 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6959,6 +7283,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C23138"
+			(at 68.58 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 68.58 53.34 0)
 			(hide yes)
@@ -7032,6 +7365,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 129.54 110.49 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)

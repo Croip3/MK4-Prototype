@@ -3958,6 +3958,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C5184243"
+			(at 120.65 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
 			(at 120.65 163.83 0)
 			(hide yes)
@@ -4162,6 +4171,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C45783"
+			(at 191.77 62.23 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 191.77 62.23 0)
 			(hide yes)
@@ -4237,6 +4255,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 80.01 43.18 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4402,6 +4429,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C15850"
+			(at 92.71 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 92.71 43.18 0)
 			(hide yes)
@@ -4445,9 +4481,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e615f1b-87d3-4d2c-90d7-830bdb962990")
@@ -4599,6 +4635,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25805"
+			(at 116.84 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 116.84 60.96 0)
 			(hide yes)
@@ -4674,6 +4719,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1739"
+			(at 128.27 69.85 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4756,6 +4810,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23354"
+			(at 116.84 53.34 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4920,6 +4983,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C3200405"
+			(at 138.43 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62933.pdf"
 			(at 138.43 77.47 0)
 			(hide yes)
@@ -5018,6 +5090,15 @@
 					(italic yes)
 				)
 				(justify left)
+			)
+		)
+		(property "LCSC" "C7519"
+			(at 120.65 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
@@ -5191,6 +5272,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C23186"
+			(at 113.03 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 113.03 148.59 0)
 			(hide yes)
@@ -5260,11 +5350,20 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Wuerth_MAPI-4030"
+		(property "Footprint" "Inductor_SMD:L_Sunlord_SWPA4030S"
 			(at 158.75 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57269"
+			(at 158.75 54.61 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,6 +5529,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 242.57 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 242.57 111.76 0)
 			(hide yes)
@@ -5505,6 +5613,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22967"
+			(at 246.38 100.33 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5591,6 +5708,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C8678"
+			(at 60.96 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
 			(at 60.96 46.99 0)
 			(hide yes)
@@ -5666,6 +5792,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 110.49 148.59 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5754,6 +5889,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C8678"
+			(at 105.41 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
 			(at 105.41 132.08 0)
 			(hide yes)
@@ -5824,11 +5968,20 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x12.6"
 			(at 128.27 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C48542923"
+			(at 128.27 43.18 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5916,6 +6069,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 105.41 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 105.41 43.18 0)
 			(hide yes)
@@ -5989,6 +6151,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1710"
+			(at 233.68 100.33 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6071,6 +6242,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C8678"
+			(at 53.34 132.08 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6237,6 +6417,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 163.83 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 163.83 66.04 0)
 			(hide yes)
@@ -6313,6 +6502,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C45783"
+			(at 175.26 62.23 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6458,7 +6656,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "31.3k"
+		(property "Value" "31.6k"
 			(at 166.37 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6474,6 +6672,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25967"
+			(at 163.83 58.42 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6601,9 +6808,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4870115-5612-4cc0-967b-306537ca302b")
@@ -6709,11 +6916,20 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 153.67 46.0248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 149.86 46.99 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)

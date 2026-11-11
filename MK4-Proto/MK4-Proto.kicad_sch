@@ -2640,7 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 24.13) (xy 52.07 24.13)
+			(xy 36.83 24.13) (xy 44.45 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3652,9 +3652,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "0dcf3e26-9540-4311-8b2a-38d96f29ecbe")
 		(property "Reference" "TP108"
@@ -3809,9 +3809,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "1b8fbb41-f0f2-4906-b0d4-c10831dbf3a0")
 		(property "Reference" "TP112"
@@ -3888,9 +3888,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "1c225155-ad44-4f04-b51f-ad0d4f90c390")
 		(property "Reference" "TP106"
@@ -4045,9 +4045,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "28cc54b7-9174-4574-bffb-150512cbf899")
 		(property "Reference" "TP116"
@@ -4124,9 +4124,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "36556e4b-b08d-4bb4-b63c-350cb5485ba2")
 		(property "Reference" "TP104"
@@ -4203,9 +4203,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "3e7ec01c-108c-49e9-a114-672b8f24f039")
 		(property "Reference" "TP107"
@@ -4318,6 +4318,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 168.91 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 168.91 157.48 0)
 			(hide yes)
@@ -4391,6 +4400,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 199.39 91.44 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,6 +4575,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 186.69 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 186.69 129.54 0)
 			(hide yes)
@@ -4678,9 +4705,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "5e881b51-adef-4579-b1f5-e04c3a77e6a9")
 		(property "Reference" "TP110"
@@ -4757,9 +4784,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "60b560bb-3c46-4960-9770-f30a551b9551")
 		(property "Reference" "TP111"
@@ -4836,9 +4863,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "6126587b-56cd-42f2-b6a2-e7f71cbd7cd1")
 		(property "Reference" "TP109"
@@ -4915,9 +4942,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "6efcec13-f04e-4047-bcdb-5b632049dd80")
 		(property "Reference" "TP118"
@@ -4994,9 +5021,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "70b5e57c-b014-4e9c-a293-b431b66273f2")
 		(property "Reference" "TP102"
@@ -5073,9 +5100,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "71f0b6e4-3ecb-4842-b11c-a9532793f96e")
 		(property "Reference" "TP115"
@@ -5188,6 +5215,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 199.39 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 199.39 96.52 0)
 			(hide yes)
@@ -5231,9 +5267,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "7fda7fea-8fd9-478d-acf2-9922d2077dec")
 		(property "Reference" "TP101"
@@ -5506,6 +5542,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 195.58 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 195.58 105.41 0)
 			(hide yes)
@@ -5579,6 +5624,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3013944"
+			(at 146.05 125.73 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5781,6 +5835,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 161.29 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 161.29 157.48 0)
 			(hide yes)
@@ -5824,9 +5887,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "9537af72-0ed3-4e67-82e2-a1e48557b9a9")
 		(property "Reference" "TP117"
@@ -5981,9 +6044,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b52f7506-03c4-4ddc-82ca-0d7490145692")
 		(property "Reference" "TP103"
@@ -6060,9 +6123,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b9fa691b-2fed-4adc-8752-f128401c6d4f")
 		(property "Reference" "TP113"
@@ -6178,6 +6241,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C15850"
+			(at 198.12 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 198.12 129.54 0)
 			(hide yes)
@@ -6253,6 +6325,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C393938"
+			(at 180.34 106.68 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6340,6 +6421,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C393938"
+			(at 187.96 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 182.88 106.68 0)
 			(hide yes)
@@ -6383,9 +6473,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "d80ffe68-80ae-46bd-a92d-34449b7c6c78")
 		(property "Reference" "TP105"
@@ -6647,11 +6737,20 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x12.6"
 			(at 51.1048 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C48542923"
+			(at 52.07 27.94 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6701,9 +6800,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebfdfcc5-3191-444b-b66f-0094d940b181")
@@ -6781,9 +6880,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f2724b6c-0aeb-42c4-abad-cad81dd025f4")
 		(property "Reference" "TP114"
@@ -7485,6 +7584,191 @@
 			(project "MK4-Proto"
 				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
 					(page "8")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 44.45 24.13) (xy 52.07 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 6 1)
+		)
+		(uuid "c59bc2d3-2a5d-4535-8627-f6740c50771b")
+	)
+	(junction
+		(at 44.45 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85d33eaf-1a5f-401a-8b43-ac8c49d23a30")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a98cf3b5-791f-4f7c-b747-0dd4ae90e75e")
+		(property "Reference" "R105"
+			(at 42.418 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 42.418 29.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 42.672 27.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 44.45 27.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Entladewiderstand fuer C104"
+			(at 44.45 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "63afb28d-5c9d-4525-aba9-b6739b914974")
+		)
+		(pin "2"
+			(uuid "e6b7bc20-1151-42c5-820c-e16a108be75b")
+		)
+		(instances
+			(project "MK4-Proto"
+				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
+					(reference "R105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GND:GND")
+		(at 44.45 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7af6d53d-e6a7-4c45-bc17-b329572bf571")
+		(property "Reference" "#PWR109"
+			(at 44.45 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 44.45 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 44.45 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe3ec1ce-1a68-4ac8-a8e4-5e88a300d92c")
+		)
+		(instances
+			(project "MK4-Proto"
+				(path "/38381170-d5a3-4fd2-9016-69ecf74bf287"
+					(reference "#PWR109")
+					(unit 1)
 				)
 			)
 		)

@@ -1466,6 +1466,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C5947"
+			(at 189.23 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
 			(at 189.23 105.41 0)
 			(hide yes)
@@ -1587,6 +1596,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 185.42 83.82 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)

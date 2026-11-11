@@ -3242,6 +3242,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C22775"
+			(at 49.53 133.35 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 49.53 133.35 0)
 			(hide yes)
@@ -3322,6 +3331,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1996"
+			(at 88.9 74.93 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3431,6 +3449,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25730"
+			(at 113.03 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 113.03 85.09 0)
 			(hide yes)
@@ -3534,6 +3561,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 148.59 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 148.59 85.09 0)
 			(hide yes)
@@ -3614,6 +3650,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1996"
+			(at 113.03 74.93 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3718,6 +3763,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1996"
+			(at 233.68 74.93 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3908,6 +3962,15 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "C22428440"
+			(at 90.17 135.89 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmux4051.pdf"
 			(at 114.808 131.318 0)
 			(hide yes)
@@ -4038,6 +4101,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C1996"
+			(at 257.81 74.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 257.81 74.93 0)
 			(hide yes)
@@ -4136,6 +4208,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1996"
+			(at 137.16 74.93 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4245,6 +4326,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 172.72 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 172.72 85.09 0)
 			(hide yes)
@@ -4330,6 +4420,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 220.98 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 220.98 85.09 0)
 			(hide yes)
@@ -4409,6 +4508,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25730"
+			(at 257.81 85.09 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4518,6 +4626,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25730"
+			(at 88.9 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 88.9 85.09 0)
 			(hide yes)
@@ -4616,6 +4733,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1996"
+			(at 161.29 74.93 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4889,6 +5015,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25730"
+			(at 137.16 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 137.16 85.09 0)
 			(hide yes)
@@ -5074,6 +5209,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 196.85 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 196.85 85.09 0)
 			(hide yes)
@@ -5151,6 +5295,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C28323"
+			(at 57.15 137.16 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5237,6 +5390,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1996"
+			(at 185.42 74.93 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5340,6 +5502,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25730"
+			(at 161.29 85.09 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5531,6 +5702,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25730"
+			(at 185.42 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 185.42 85.09 0)
 			(hide yes)
@@ -5634,6 +5814,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 269.24 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 269.24 85.09 0)
 			(hide yes)
@@ -5711,6 +5900,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
+			(at 69.85 137.16 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5802,6 +6000,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 100.33 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 100.33 85.09 0)
 			(hide yes)
@@ -5881,6 +6088,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25730"
+			(at 209.55 85.09 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6154,6 +6370,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C25730"
+			(at 233.68 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 233.68 85.09 0)
 			(hide yes)
@@ -6257,6 +6482,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 124.46 85.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Datasheet" ""
 			(at 124.46 85.09 0)
 			(hide yes)
@@ -6336,6 +6570,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 245.11 85.09 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6504,6 +6747,15 @@
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1996"
+			(at 209.55 74.93 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
